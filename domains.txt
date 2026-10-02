@@ -1,5 +1,3 @@
-hitechcloud.vn
-my.hitechcloud.vn
 whois.hitechcloud.vn
 photuesoftware.com
 licensing.hitechcloud.vn
@@ -31,11 +29,11 @@ cloud-vt03.bnix.one:8006
 dns.bnix.one
 id.bnix.one
 my.bnix.one
-ns1.bnix.one:53
-ns2.bnix.one:53
-ns3.bnix.one:53
-ns4.bnix.one:53
-nsbak.bnix.one:53
+ns1.bnix.one
+ns2.bnix.one
+ns3.bnix.one
+ns4.bnix.one
+nsbak.bnix.one
 nvme-pl01.bnix.one:2087
 nvme-sg1.bnix.one:2087
 nvme-vt01.bnix.one:2087
