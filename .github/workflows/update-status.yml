@@ -1,0 +1,84 @@
+name: Check domains
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+    inputs:
+      ssl_threshold:
+        description: "Days before SSL/WHOIS expiration to trigger an alert"
+        required: false
+        default: "7"
+      response_time:
+        description: "HTTP response time in ms to trigger an alert"
+        required: false
+        default: "500"
+  repository_dispatch:
+    types: [self-trigger]
+permissions:
+  contents: write
+  issues: write
+jobs:
+  update-status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check if domains exist
+        id: domains_check
+        run: |
+          if [ ! -s domains.txt ]; then
+            echo "No domains found."
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "Domains found."
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+      - uses: actions/setup-python@v4
+        if: steps.domains_check.outputs.skip == 'false'
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+        if: steps.domains_check.outputs.skip == 'false'
+      - name: Generate config.json
+        if: steps.domains_check.outputs.skip == 'false'
+        run: |
+          mkdir -p status
+          REPO="${{ github.repository }}"
+          BRANCH="${{ github.ref_name }}"
+          USER="${REPO%%/*}"
+          REPO_NAME="${REPO##*/}"
+          cat <<EOF > status/config.json
+          {
+            "github_user": "$USER",
+            "github_repo": "$REPO_NAME",
+            "github_branch": "$BRANCH"
+          }
+          EOF
+          cat status/config.json
+      - name: Check domains
+        if: steps.domains_check.outputs.skip == 'false'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          RESPONSE_THRESHOLD: ${{ github.event.inputs.response_time || '1000' }}
+          DAYS_THRESHOLD: ${{ github.event.inputs.ssl_threshold || '9' }}
+        run: python check_domains.py
+      - name: Commit files
+        id: commit
+        if: steps.domains_check.outputs.skip == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          FILES=$(ls status/*.json status/**/*.json 2>/dev/null || true)
+
+          if [ -z "$FILES" ]; then
+            echo "No status files to commit."
+            exit 0
+          fi
+
+          git add $FILES
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Data fetched for domains [skip ci]"
+          git push
