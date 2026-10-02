@@ -12,4 +12,4 @@ An open-source WHOIS, DNS, Uptime monitor and status page, fully powered by GitH
 
 relies entirely on **GitHub Actions** and **GitHub Issues** - no external services required.
 
-Visit on github: [stefanpejcic/heimdall/](https://github.com/thanhan92-f1/heimdall/wiki)
+Visit on github: [thanhan92-f1/heimdall/](https://github.com/thanhan92-f1/heimdall/wiki)
