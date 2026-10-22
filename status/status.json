@@ -11,11 +11,11 @@
         "ns5.hitechcloud.vn"
       ],
       "registrar": null,
-      "http_status": 200,
+      "http_status": 404,
       "whois_ok": false,
       "ssl_ok": true,
-      "http_ok": true,
-      "http_response_time_ms": 3152.7,
+      "http_ok": false,
+      "http_response_time_ms": 896.145,
       "resolved_ip": "116.118.2.45"
     },
     {
@@ -35,8 +35,8 @@
       "whois_ok": true,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 2467.0969999999998,
-      "resolved_ip": "103.249.117.146"
+      "http_response_time_ms": 1771.5140000000001,
+      "resolved_ip": "51.79.146.123"
     },
     {
       "domain": "licensing.hitechcloud.vn",
@@ -53,8 +53,8 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 256.45,
-      "resolved_ip": "103.249.117.146"
+      "http_response_time_ms": 210.894,
+      "resolved_ip": "51.79.146.123"
     },
     {
       "domain": "api-tools.hitechcloud.vn",
@@ -71,7 +71,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 2148.504,
+      "http_response_time_ms": 917.2909999999999,
       "resolved_ip": "103.249.117.145"
     },
     {
@@ -89,7 +89,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 261.386,
+      "http_response_time_ms": 227.53300000000002,
       "resolved_ip": "116.118.2.45"
     },
     {
@@ -107,7 +107,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 2175.3650000000002,
+      "http_response_time_ms": 813.2810000000001,
       "resolved_ip": "103.249.117.145"
     },
     {
@@ -125,7 +125,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 2122.763,
+      "http_response_time_ms": 935.697,
       "resolved_ip": "103.249.117.145"
     },
     {
@@ -143,7 +143,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 1452.396,
+      "http_response_time_ms": 1017.9530000000001,
       "resolved_ip": "103.249.117.145"
     },
     {
@@ -161,7 +161,7 @@
       "whois_ok": true,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 150.847,
+      "http_response_time_ms": 158.654,
       "resolved_ip": "202.12.29.1"
     },
     {
@@ -179,7 +179,7 @@
       "whois_ok": true,
       "ssl_ok": true,
       "http_ok": false,
-      "http_response_time_ms": 175.944,
+      "http_response_time_ms": 322.654,
       "resolved_ip": "104.18.235.68"
     },
     {
@@ -195,8 +195,8 @@
       "whois_ok": true,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 770.8530000000001,
-      "resolved_ip": "185.199.111.153"
+      "http_response_time_ms": 691.0300000000001,
+      "resolved_ip": "185.199.108.153"
     },
     {
       "domain": "disposable-email-domains.nguyenthanhan.com",
@@ -211,8 +211,8 @@
       "whois_ok": true,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 870.8580000000001,
-      "resolved_ip": "185.199.109.153"
+      "http_response_time_ms": 428.017,
+      "resolved_ip": "185.199.108.153"
     },
     {
       "domain": "nguyenthanhan.com",
@@ -227,7 +227,7 @@
       "whois_ok": true,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 1730.46,
+      "http_response_time_ms": 1369.02,
       "resolved_ip": "116.118.2.45"
     },
     {
@@ -244,7 +244,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 1987.327,
+      "http_response_time_ms": 1237.185,
       "resolved_ip": "203.119.73.25"
     },
     {
@@ -260,7 +260,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": false,
-      "http_response_time_ms": 550.63,
+      "http_response_time_ms": 244.141,
       "resolved_ip": "172.67.182.54"
     },
     {
@@ -276,7 +276,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 2294.1569999999997,
+      "http_response_time_ms": 1563.3239999999998,
       "resolved_ip": "103.130.216.5"
     },
     {
@@ -292,8 +292,8 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": false,
-      "http_response_time_ms": 82.914,
-      "resolved_ip": "104.21.83.222"
+      "http_response_time_ms": 241.374,
+      "resolved_ip": "172.67.182.54"
     },
     {
       "domain": "my.bnix.one",
@@ -308,8 +308,8 @@
       "whois_ok": true,
       "ssl_ok": true,
       "http_ok": false,
-      "http_response_time_ms": 219.20600000000002,
-      "resolved_ip": "143.244.60.196"
+      "http_response_time_ms": 156.554,
+      "resolved_ip": "212.102.40.120"
     },
     {
       "domain": "azmail.bnix.vn",
@@ -324,7 +324,7 @@
       "whois_ok": false,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 1028.646,
+      "http_response_time_ms": 702.175,
       "resolved_ip": "103.161.172.43"
     },
     {
@@ -340,10 +340,10 @@
       "whois_ok": true,
       "ssl_ok": true,
       "http_ok": true,
-      "http_response_time_ms": 115.06,
+      "http_response_time_ms": 238.268,
       "resolved_ip": "154.202.3.253"
     }
   ],
-  "last_updated": "2026-10-22 18:18:30",
-  "ip_address": "20.83.174.49"
+  "last_updated": "2026-10-22 22:06:53",
+  "ip_address": "52.161.51.156"
 }
